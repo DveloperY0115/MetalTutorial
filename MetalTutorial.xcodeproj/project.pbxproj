@@ -10,10 +10,22 @@
 		5BF322F7272ECD8B0062E38D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF322F6272ECD8B0062E38D /* main.m */; };
 		5BF322FE272ECDB60062E38D /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5BF322FD272ECDB60062E38D /* add.metal */; };
 		5BF32301272ECFC40062E38D /* MetalAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32300272ECFC40062E38D /* MetalAdder.m */; };
+		5BF32309272EDE730062E38D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32308272EDE730062E38D /* main.swift */; };
+		5BF3230E272EDEAC0062E38D /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3230D272EDEAC0062E38D /* add.metal */; };
+		5BF32310272EDF670062E38D /* MetalAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3230F272EDF670062E38D /* MetalAdder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5BF322F1272ECD8B0062E38D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5BF32304272EDE730062E38D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -30,10 +42,21 @@
 		5BF322FD272ECDB60062E38D /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
 		5BF322FF272ECF450062E38D /* MetalAdder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalAdder.h; sourceTree = "<group>"; };
 		5BF32300272ECFC40062E38D /* MetalAdder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalAdder.m; sourceTree = "<group>"; };
+		5BF32306272EDE730062E38D /* MetalAdder-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MetalAdder-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF32308272EDE730062E38D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5BF3230D272EDEAC0062E38D /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
+		5BF3230F272EDF670062E38D /* MetalAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalAdder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5BF322F0272ECD8B0062E38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF32303272EDE730062E38D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,7 +69,8 @@
 		5BF322EA272ECD8B0062E38D = {
 			isa = PBXGroup;
 			children = (
-				5BF322F5272ECD8B0062E38D /* MetalTutorial */,
+				5BF322F5272ECD8B0062E38D /* MetalTutorial-ObjectiveC */,
+				5BF32307272EDE730062E38D /* MetalAdder-Swift */,
 				5BF322F4272ECD8B0062E38D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,11 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				5BF322F3272ECD8B0062E38D /* MetalTutorial */,
+				5BF32306272EDE730062E38D /* MetalAdder-Swift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5BF322F5272ECD8B0062E38D /* MetalTutorial */ = {
+		5BF322F5272ECD8B0062E38D /* MetalTutorial-ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
 				5BF322FD272ECDB60062E38D /* add.metal */,
@@ -67,7 +92,17 @@
 				5BF322FF272ECF450062E38D /* MetalAdder.h */,
 				5BF32300272ECFC40062E38D /* MetalAdder.m */,
 			);
-			path = MetalTutorial;
+			path = "MetalTutorial-ObjectiveC";
+			sourceTree = "<group>";
+		};
+		5BF32307272EDE730062E38D /* MetalAdder-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5BF32308272EDE730062E38D /* main.swift */,
+				5BF3230D272EDEAC0062E38D /* add.metal */,
+				5BF3230F272EDF670062E38D /* MetalAdder.swift */,
+			);
+			path = "MetalAdder-Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +125,23 @@
 			productReference = 5BF322F3272ECD8B0062E38D /* MetalTutorial */;
 			productType = "com.apple.product-type.tool";
 		};
+		5BF32305272EDE730062E38D /* MetalAdder-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF3230A272EDE730062E38D /* Build configuration list for PBXNativeTarget "MetalAdder-Swift" */;
+			buildPhases = (
+				5BF32302272EDE730062E38D /* Sources */,
+				5BF32303272EDE730062E38D /* Frameworks */,
+				5BF32304272EDE730062E38D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetalAdder-Swift";
+			productName = "MetalAdder-Swift";
+			productReference = 5BF32306272EDE730062E38D /* MetalAdder-Swift */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,9 +149,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					5BF322F2272ECD8B0062E38D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					5BF32305272EDE730062E38D = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -118,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				5BF322F2272ECD8B0062E38D /* MetalTutorial */,
+				5BF32305272EDE730062E38D /* MetalAdder-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +187,16 @@
 				5BF32301272ECFC40062E38D /* MetalAdder.m in Sources */,
 				5BF322F7272ECD8B0062E38D /* main.m in Sources */,
 				5BF322FE272ECDB60062E38D /* add.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF32302272EDE730062E38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF32309272EDE730062E38D /* main.swift in Sources */,
+				5BF3230E272EDEAC0062E38D /* add.metal in Sources */,
+				5BF32310272EDF670062E38D /* MetalAdder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +334,32 @@
 			};
 			name = Release;
 		};
+		5BF3230B272EDE730062E38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7AU7Z92MK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5BF3230C272EDE730062E38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7AU7Z92MK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +377,15 @@
 			buildConfigurations = (
 				5BF322FB272ECD8B0062E38D /* Debug */,
 				5BF322FC272ECD8B0062E38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF3230A272EDE730062E38D /* Build configuration list for PBXNativeTarget "MetalAdder-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF3230B272EDE730062E38D /* Debug */,
+				5BF3230C272EDE730062E38D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
