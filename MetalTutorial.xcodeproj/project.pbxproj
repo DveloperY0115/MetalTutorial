@@ -69,7 +69,7 @@
 		5BF322EA272ECD8B0062E38D = {
 			isa = PBXGroup;
 			children = (
-				5BF322F5272ECD8B0062E38D /* MetalTutorial-ObjectiveC */,
+				5BF322F5272ECD8B0062E38D /* MetalAdder-ObjectiveC */,
 				5BF32307272EDE730062E38D /* MetalAdder-Swift */,
 				5BF322F4272ECD8B0062E38D /* Products */,
 			);
@@ -84,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5BF322F5272ECD8B0062E38D /* MetalTutorial-ObjectiveC */ = {
+		5BF322F5272ECD8B0062E38D /* MetalAdder-ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
 				5BF322FD272ECDB60062E38D /* add.metal */,
@@ -92,7 +92,7 @@
 				5BF322FF272ECF450062E38D /* MetalAdder.h */,
 				5BF32300272ECFC40062E38D /* MetalAdder.m */,
 			);
-			path = "MetalTutorial-ObjectiveC";
+			path = "MetalAdder-ObjectiveC";
 			sourceTree = "<group>";
 		};
 		5BF32307272EDE730062E38D /* MetalAdder-Swift */ = {
