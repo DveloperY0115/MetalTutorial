@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5BF322F7272ECD8B0062E38D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF322F6272ECD8B0062E38D /* main.m */; };
+		5BF322FE272ECDB60062E38D /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5BF322FD272ECDB60062E38D /* add.metal */; };
+		5BF32301272ECFC40062E38D /* MetalAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF32300272ECFC40062E38D /* MetalAdder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		5BF322F3272ECD8B0062E38D /* MetalTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetalTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF322F6272ECD8B0062E38D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BF322FD272ECDB60062E38D /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
+		5BF322FF272ECF450062E38D /* MetalAdder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalAdder.h; sourceTree = "<group>"; };
+		5BF32300272ECFC40062E38D /* MetalAdder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalAdder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		5BF322F5272ECD8B0062E38D /* MetalTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				5BF322FD272ECDB60062E38D /* add.metal */,
 				5BF322F6272ECD8B0062E38D /* main.m */,
+				5BF322FF272ECF450062E38D /* MetalAdder.h */,
+				5BF32300272ECFC40062E38D /* MetalAdder.m */,
 			);
 			path = MetalTutorial;
 			sourceTree = "<group>";
@@ -119,7 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF32301272ECFC40062E38D /* MetalAdder.m in Sources */,
 				5BF322F7272ECD8B0062E38D /* main.m in Sources */,
+				5BF322FE272ECDB60062E38D /* add.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
